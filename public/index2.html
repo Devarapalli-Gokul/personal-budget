@@ -182,7 +182,13 @@
         </div>
     </main>
 
-
+    <footer>
+        <div class="bottom">
+            <div class="center">
+                All rights reserved &copy; Gokul Devarapalli
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js" integrity="sha512-SIMGYRUjwY8+gKg7nn9EItdD8LCADSDfJNutF9TPrvEo86sQmFMh6MyralfIyhADlajSxqc7G0gs7+MwWF/ogQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -267,7 +273,7 @@
         var key = function(d){ return d.data.title; };
 
         var color = d3.scale.ordinal()
-            .range(["#62b0f2", "#ffa32d", "#5085a5", "#cb2c31", "#003366", "#a3d081", "#ff8c00"]);
+            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
         // Fetch data from the server using Axios
         axios.get('/budget')
@@ -368,15 +374,6 @@
                 console.log(polyline);
         }
     </script>
-
-
-<footer>
-    <div class="bottom">
-        <div class="center">
-            All rights reserved &copy; Gokul Devarapalli
-        </div>
-    </div>
-</footer>
 
    
 </body>
